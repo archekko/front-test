@@ -2,12 +2,63 @@
     .container{
         max-width: 960px;
     }
-
+    .water{
+        &__title{
+            font-size: 54px;
+        }
+        &__substrate{
+            padding: 38px 0;
+        }
+    }
 }
 
 @media (max-width: 992px) {
     .container{
         max-width: 720px;
+    }
+    .water{
+        text-align: center;
+        &__title{
+            font-size: 42px;
+            line-height: 57px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        &__substrate{
+            display: none;
+        }
+        .btns_water{
+            margin-top: 40px;
+        }
+    }
+    .features{
+        &__text{
+            font-size: 21px;
+            line-height: 34px;
+        }
+        &__part-1{
+            padding: 60px 0;
+        }
+        &__title{
+            font-size: 30px;
+        }
+        &__part-2{
+            padding: 48px 0;
+            &-wrapper{
+                padding: 0;
+                grid-template-columns: repeat(2,280px);
+            }
+            &-item{
+                grid-template-columns: 54px 210px;
+            }
+        }
+        &__part-3{
+            padding: 48px 0 64px 0;
+        }
     }
 }
 
@@ -33,7 +84,7 @@
             }
         }
         &__menu{
-            padding: 20px 0;
+            padding: 20px 20px;
             nav{
                 justify-content: space-between;
                 .hamburger{
@@ -69,11 +120,56 @@
             }
         }
     }
+    .features{
+        
+        &__text{
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+        }
+        &__title{
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+        }
+        &__part-2{
+            &-image{
+                position: relative;
+                top: 160px
+            }
+            &-wrapper{
+                grid-template-columns: minmax(300px,  auto);
+                justify-content: center;
+            }
+        }
+    }
+    .btns{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 576px) {
     .container{
         max-width: 100%;
         padding: 0 10px;
+    }
+    .header{
+        &__logo{
+            width: 80px;
+            height: 24px;
+        }
+    }
+    .water{
+        padding: 80px 0;
+        &__title{
+            line-height: 50px;
+        }
+    }
+    .features{
+        &__part-2{
+            &-image{
+                top: 120px;
+            }
+        }
     }
 }

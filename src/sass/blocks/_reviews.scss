@@ -1,0 +1,66 @@
+.reviews{
+  &__wrapper{
+    position: absolute;
+    max-width: 650px;
+    bottom: 0;
+    padding: 40px 0;
+  }
+    &__star{
+      display: grid;
+      grid-template-columns: repeat(5, 21px);
+      grid-auto-flow: column;
+      grid-auto-columns: 20px;
+      column-gap: 5px;
+      margin-bottom: 32px;
+    }
+    &__container {
+      width: 100%;
+      margin: auto;
+    }
+    &__slides {
+        display: none;
+        position: relative;
+    }
+    .prev, .next {
+      cursor: pointer;
+      width: 51px;
+      height: 51px;
+      transition: 0.6s ease;
+    }
+    .next {
+      margin-left: 24px;
+    }
+    &__text {
+      color: #fff;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 31px;
+      span{
+        display: block;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.8s;
+      animation-name: fade;
+      animation-duration: 1.8s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+}

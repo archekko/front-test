@@ -1,0 +1,35 @@
+.water{
+    background: url('../img/water_bg.png') center (center / cover) no-repeat;
+    // background: url('../img/water_bg.png') no-repeat 50%/cover;
+    padding: 217px 0 217px 0;
+    position: relative;
+    z-index: 1;
+    &__title{
+        font-family: 'Nunito Sans', sans-serif; 
+        font-weight: bold;
+        font-size: 56px;
+        line-height: 70px;
+        max-width: 784px;
+        color: #fff;
+    }
+    &__text{
+        margin-top: 16px;
+        max-width: 605px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #fff;
+    }
+    &__substrate{
+        background-color: $second-color;
+        padding: 32px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        &-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

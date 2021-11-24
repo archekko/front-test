@@ -1,0 +1,26 @@
+.btns{
+    border:none;
+    background-color: $first-color;
+    padding: 17px 92px;
+    border-radius: 42px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+    &::after{
+        content: url(../icons/right.svg);
+        position: absolute;
+        top: 58%;
+        transform: translateY(-50%);
+        right: 21px;
+    }
+    &_water{
+        margin-top: 29px;
+    }
+    &_features{
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
