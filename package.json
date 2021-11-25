@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://archekko.github.io/"
+    "url": "https://github.com/archekko/split-test1"
   },
   "author": "lena",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/archekko/split-test/issues"
+    "url": "https://github.com/archekko/split-test1/issues"
   },
-  "homepage": "https://github.com/archekko/split-test#readme",
+  "homepage": "https://github.com/archekko/split-test1#readme",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0"
