@@ -23,4 +23,27 @@
         margin: 0 auto;
         margin-top: 40px;
     }
+    &_benefits{
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    &_perfect{
+        margin-top: 60px;
+        &-2{
+            display: none;
+            margin: 0 auto;
+            margin-top: 48px;
+        }
+    }
+    &_social{
+        display: block;
+        background-color: #fff;
+        color: $first-color;
+        margin: 0 auto;
+        margin-top: 60px;
+        &:after{
+            content: url(../icons/soc-btn.svg);
+        }
+    }
 }
